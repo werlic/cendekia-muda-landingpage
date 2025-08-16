@@ -206,37 +206,42 @@
                     <p class="text-gray-600 mb-8 leading-relaxed">
                         Dengan inovasi dan kolaborasi serta pengaplikasiannya dalam Program STEM, Sekolah Islam Cendekia Muda berkontribusi dalam mendorong inovasi dan keberlanjutan, demi lingkungan yang lebih baik dan masa depan yang lebih cerah.
                     </p>
-                    <div class="mb-8">
-                        <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">
-                            Selengkapnya tentang Tujuan Program STEM SMA Islam Cendekia Muda →
-                        </a>
-                    </div>
                 </div>
-
-                <!-- Right Content - SDG Goals -->
+                <!-- Left Content -->
                 <div>
-                    <div class="mb-8">
-                        <img src="/api/placeholder/200/80" alt="UN Sustainable Development Goals" class="h-20 mb-6">
-                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">
+                        Selengkapnya tentang Tujuan Program STEM SMA Islam Cendekia Muda →
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 items-center">
+                <div>
+                    {{-- <div class="mb-8">
+                        <img src="/api/placeholder/200/80" alt="Unsustainable Development Goals" class="h-20 mb-6">
+                    </div> --}}
                     
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <div class="grid grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div class="card text-center">
+                            <div class="text-red-500 text-4xl font-bold mb-2"></div>
+                            <div class="text-xs font-semibold text-red-500">Unsustainable Development Goals</div>
+                        </div>
+                        <div class="card text-center">
                             <div class="text-red-500 text-4xl font-bold mb-2">1</div>
                             <div class="text-xs font-semibold text-red-500">NO POVERTY</div>
                         </div>
-                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <div class="card text-center">
                             <div class="text-yellow-500 text-4xl font-bold mb-2">2</div>
                             <div class="text-xs font-semibold text-yellow-600">ZERO HUNGER</div>
                         </div>
-                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <div class="card text-center">
                             <div class="text-green-500 text-4xl font-bold mb-2">3</div>
                             <div class="text-xs font-semibold text-green-600">GOOD HEALTH AND WELL-BEING</div>
                         </div>
-                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <div class="card text-center">
                             <div class="text-red-600 text-4xl font-bold mb-2">4</div>
                             <div class="text-xs font-semibold text-red-600">QUALITY EDUCATION</div>
                         </div>
-                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <div class="card text-center">
                             <div class="text-orange-500 text-4xl font-bold mb-2">5</div>
                             <div class="text-xs font-semibold text-orange-600">GENDER EQUALITY</div>
                         </div>
