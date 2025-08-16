@@ -1,0 +1,203 @@
+@import 'tailwindcss';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Custom Components for Cendekia Muda */
+@layer components {
+    /* Color Palette */
+    /* Primary Colors */
+    .color-primary { @apply text-blue-600; }
+    .color-primary-100 { @apply text-blue-100; }
+    .color-primary-200 { @apply text-blue-200; }
+    .color-primary-300 { @apply text-blue-300; }
+    .color-primary-400 { @apply text-blue-400; }
+    .color-primary-500 { @apply text-blue-500; }
+    .color-primary-600 { @apply text-blue-600; }
+    .color-primary-700 { @apply text-blue-700; }
+    .color-primary-800 { @apply text-blue-800; }
+    .color-primary-900 { @apply text-blue-900; }
+
+    /* Secondary Colors */
+    .color-secondary { @apply text-emerald-600; }
+    .color-secondary-100 { @apply text-emerald-100; }
+    .color-secondary-200 { @apply text-emerald-200; }
+    .color-secondary-300 { @apply text-emerald-300; }
+    .color-secondary-400 { @apply text-emerald-400; }
+    .color-secondary-500 { @apply text-emerald-500; }
+    .color-secondary-600 { @apply text-emerald-600; }
+    .color-secondary-700 { @apply text-emerald-700; }
+    .color-secondary-800 { @apply text-emerald-800; }
+    .color-secondary-900 { @apply text-emerald-900; }
+
+    /* Accent Colors */
+    .color-accent { @apply text-amber-500; }
+    .color-accent-100 { @apply text-amber-100; }
+    .color-accent-200 { @apply text-amber-200; }
+    .color-accent-300 { @apply text-amber-300; }
+    .color-accent-400 { @apply text-amber-400; }
+    .color-accent-500 { @apply text-amber-500; }
+    .color-accent-600 { @apply text-amber-600; }
+    .color-accent-700 { @apply text-amber-700; }
+    .color-accent-800 { @apply text-amber-800; }
+    .color-accent-900 { @apply text-amber-900; }
+
+    /* Background Colors */
+    .bg-primary { @apply bg-blue-600; }
+    .bg-primary-100 { @apply bg-blue-100; }
+    .bg-primary-200 { @apply bg-blue-200; }
+    .bg-primary-300 { @apply bg-blue-300; }
+    .bg-primary-400 { @apply bg-blue-400; }
+    .bg-primary-500 { @apply bg-blue-500; }
+    .bg-primary-600 { @apply bg-blue-600; }
+    .bg-primary-700 { @apply bg-blue-700; }
+    .bg-primary-800 { @apply bg-blue-800; }
+    .bg-primary-900 { @apply bg-blue-900; }
+
+    .bg-secondary { @apply bg-emerald-600; }
+    .bg-secondary-100 { @apply bg-emerald-100; }
+    .bg-secondary-200 { @apply bg-emerald-200; }
+    .bg-secondary-300 { @apply bg-emerald-300; }
+    .bg-secondary-400 { @apply bg-emerald-400; }
+    .bg-secondary-500 { @apply bg-emerald-500; }
+    .bg-secondary-600 { @apply bg-emerald-600; }
+    .bg-secondary-700 { @apply bg-emerald-700; }
+    .bg-secondary-800 { @apply bg-emerald-800; }
+    .bg-secondary-900 { @apply bg-emerald-900; }
+
+    .bg-accent { @apply bg-amber-500; }
+    .bg-accent-100 { @apply bg-amber-100; }
+    .bg-accent-200 { @apply bg-amber-200; }
+    .bg-accent-300 { @apply bg-amber-300; }
+    .bg-accent-400 { @apply bg-amber-400; }
+    .bg-accent-500 { @apply bg-amber-500; }
+    .bg-accent-600 { @apply bg-amber-600; }
+    .bg-accent-700 { @apply bg-amber-700; }
+    .bg-accent-800 { @apply bg-amber-800; }
+    .bg-accent-900 { @apply bg-amber-900; }
+
+    /* Border Colors */
+    .border-primary { @apply border-blue-600; }
+    .border-primary-100 { @apply border-blue-100; }
+    .border-primary-200 { @apply border-blue-200; }
+    .border-primary-300 { @apply border-blue-300; }
+    .border-primary-400 { @apply border-blue-400; }
+    .border-primary-500 { @apply border-blue-500; }
+    .border-primary-600 { @apply border-blue-600; }
+    .border-primary-700 { @apply border-blue-700; }
+    .border-primary-800 { @apply border-blue-800; }
+    .border-primary-900 { @apply border-blue-900; }
+
+    .border-secondary { @apply border-emerald-600; }
+    .border-secondary-100 { @apply border-emerald-100; }
+    .border-secondary-200 { @apply border-emerald-200; }
+    .border-secondary-300 { @apply border-emerald-300; }
+    .border-secondary-400 { @apply border-emerald-400; }
+    .border-secondary-500 { @apply border-emerald-500; }
+    .border-secondary-600 { @apply border-emerald-600; }
+    .border-secondary-700 { @apply border-emerald-700; }
+    .border-secondary-800 { @apply border-emerald-800; }
+    .border-secondary-900 { @apply border-emerald-900; }
+
+    .border-accent { @apply border-amber-500; }
+    .border-accent-100 { @apply border-amber-100; }
+    .border-accent-200 { @apply border-amber-200; }
+    .border-accent-300 { @apply border-amber-300; }
+    .border-accent-400 { @apply border-amber-400; }
+    .border-accent-500 { @apply border-amber-500; }
+    .border-accent-600 { @apply border-amber-600; }
+    .border-accent-700 { @apply border-amber-700; }
+    .border-accent-800 { @apply border-amber-800; }
+    .border-accent-900 { @apply border-amber-900; }
+
+    /* Button Components */
+    .btn-primary {
+        @apply bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg;
+    }
+    
+    .btn-secondary {
+        @apply bg-white hover:bg-gray-50 text-blue-600 border border-blue-600 px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg;
+    }
+    
+    .btn-outline {
+        @apply border-2 border-current text-current px-6 py-3 rounded-lg font-semibold hover:bg-current hover:text-white transition-colors duration-200;
+    }
+
+    /* Navigation Components */
+    .nav-link {
+        @apply text-gray-700 hover:text-blue-600 px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+    }
+    
+    .nav-link.active {
+        @apply text-blue-600 bg-blue-50;
+    }
+    
+    .dropdown-menu {
+        @apply absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50;
+    }
+    
+    .dropdown-item {
+        @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200;
+    }
+
+    /* Card Components */
+    .card {
+        @apply bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100;
+    }
+    
+    .card-header {
+        @apply mb-4 pb-4 border-b border-gray-100;
+    }
+    
+    .card-title {
+        @apply text-xl font-bold text-gray-900 mb-2;
+    }
+    
+    .card-description {
+        @apply text-gray-600 leading-relaxed;
+    }
+
+    /* Section Components */
+    .section {
+        @apply py-16 lg:py-20;
+    }
+    
+    .section-header {
+        @apply text-center mb-12 lg:mb-16;
+    }
+    
+    .section-title {
+        @apply text-3xl lg:text-5xl font-bold text-gray-900 mb-4;
+    }
+    
+    .section-subtitle {
+        @apply text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed;
+    }
+
+    /* Hero Components */
+    .hero-title {
+        @apply text-4xl lg:text-6xl font-bold text-gray-900 leading-tight;
+    }
+    
+    .hero-subtitle {
+        @apply text-xl lg:text-2xl text-gray-600 leading-relaxed;
+    }
+    
+    .hero-cta {
+        @apply flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8;
+    }
+
+    /* Islamic Theme Colors */
+    .islamic-green {
+        @apply bg-emerald-600 hover:bg-emerald-700;
+    }
+    
+    .islamic-gold {
+        @apply bg-amber-500 hover:bg-amber-600;
+    }
+    
+    .islamic-blue {
+        @apply bg-blue-600 hover:bg-blue-700;
+    }
+}
