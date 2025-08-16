@@ -279,32 +279,44 @@
     </section>
 
     <!-- School Profile Section -->
-    <section class="py-20 bg-gradient-to-br from-blue-500 to-teal-400 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section class="py-20 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 card bg-gradient-to-br from-blue-500 to-teal-400 text-white">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
                 <!-- Left Content -->
-                <div>
+                <div class="lg:col-span-2">
                     <h2 class="text-3xl lg:text-4xl font-bold mb-6">
                         Sekolah Islam Cendekia Muda
                     </h2>
                     <p class="text-blue-100 mb-6 leading-relaxed">
                         Sekolah Islam Cendekia Muda (CM) adalah Sekolah yang terletak di Bandung, Jawa Barat, Indonesia. Menggunakan Kurikulum God-Centered Education dan Shirah Nabawiyah Based-Learning dan Kurikulum Pemerintah yang dipadukan dengan mengintegrasikan ilmu pengetahuan dengan konsep ketuhanan.
                     </p>
-                    <div class="mb-8">
-                        <p class="text-right text-blue-100 mb-2">
-                            Sekolah Islam Cendekia Muda didirikan pada 14 Februari 2000 dan sudah Berusia 23 Tahun
-                        </p>
-                    </div>
                     <a href="#" class="text-white hover:text-blue-200 font-semibold">
                         Selengkapnya tentang CM →
                     </a>
                 </div>
 
                 <!-- Right Content - Statistics -->
-                <div>
-                    <div class="bg-white bg-opacity-10 p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold mb-8 text-center">Sekolah Inklusi</h3>
-                        <p class="text-center text-blue-100 mb-8">God Centered Education<br>Shirah Nabawiyah Based-Learning</p>
+                <div class="lg:col-span-1">
+                    <div class="mb-8">
+                        <p class="text-center text-blue-100 mb-2">
+                            Sekolah Islam Cendekia Muda didirikan pada 14 Februari 2000 dan sudah Berusia 23 Tahun
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card grid grid-cols-3 lg:grid-cols-6 gap-12 items-center mt-3">
+                <!-- Left Content -->
+                <div class="col-span-1 lg:col-span-2 h-full flex items-center">
+                    <div class="text-gray-900">
+                        <h1 class="text-4xl font-bold mb-8">Sekolah<br>Inklusi</h1>
+                        <p class="text-gray-600 mb-8">God Centered Education<br>Shirah Nabawiyah Based-Learning</p>
+                    </div>
+                </div>
+
+                <!-- Right Content - Statistics -->
+                <div class="col-span-2 lg:col-span-4">
+                    <div class="bg-white bg-opacity-10 p-8 rounded-2xl text-gray-900">
                         
                         <div class="grid grid-cols-2 gap-6">
                             <!-- Students Stats -->
@@ -315,7 +327,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">50.000.000</div>
-                                        <div class="text-sm text-blue-100">Siswa</div>
+                                        <div class="text-sm text-gray-600">Siswa</div>
                                     </div>
                                 </div>
                                 <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-3 flex items-center">
@@ -324,7 +336,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">1.000.000</div>
-                                        <div class="text-sm text-blue-100">Alumni</div>
+                                        <div class="text-sm text-gray-600">Alumni</div>
                                     </div>
                                 </div>
                                 <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-3 flex items-center">
@@ -333,7 +345,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">5.000.000</div>
-                                        <div class="text-sm text-blue-100">Siswa TK Reguler</div>
+                                        <div class="text-sm text-gray-600">Siswa TK Reguler</div>
                                     </div>
                                 </div>
                                 <div class="bg-white bg-opacity-20 p-4 rounded-lg flex items-center">
@@ -342,7 +354,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">5.000.000</div>
-                                        <div class="text-sm text-blue-100">Siswa SMP Reguler</div>
+                                        <div class="text-sm text-gray-600">Siswa SMP Reguler</div>
                                     </div>
                                 </div>
                             </div>
@@ -355,7 +367,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">50.000.000</div>
-                                        <div class="text-sm text-blue-100">Siswa Internasional</div>
+                                        <div class="text-sm text-gray-600">Siswa Internasional</div>
                                     </div>
                                 </div>
                                 <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-3 flex items-center">
@@ -364,7 +376,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">1.000.000</div>
-                                        <div class="text-sm text-blue-100">Alumni</div>
+                                        <div class="text-sm text-gray-600">Alumni</div>
                                     </div>
                                 </div>
                                 <div class="bg-white bg-opacity-20 p-4 rounded-lg mb-3 flex items-center">
@@ -373,7 +385,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">5.000.000</div>
-                                        <div class="text-sm text-blue-100">Siswa SD Reguler</div>
+                                        <div class="text-sm text-gray-600">Siswa SD Reguler</div>
                                     </div>
                                 </div>
                                 <div class="bg-white bg-opacity-20 p-4 rounded-lg flex items-center">
@@ -382,7 +394,7 @@
                                     </div>
                                     <div>
                                         <div class="text-2xl font-bold">5.000.000</div>
-                                        <div class="text-sm text-blue-100">Siswa SMA Reguler</div>
+                                        <div class="text-sm text-gray-600">Siswa SMA Reguler</div>
                                     </div>
                                 </div>
                             </div>
@@ -392,15 +404,15 @@
                         <div class="grid grid-cols-3 gap-4 mt-8">
                             <div class="bg-white bg-opacity-20 p-4 rounded-lg text-center">
                                 <div class="text-3xl font-bold">512</div>
-                                <div class="text-sm text-blue-100">Guru S3</div>
+                                <div class="text-sm text-gray-600">Guru S3</div>
                             </div>
                             <div class="bg-white bg-opacity-20 p-4 rounded-lg text-center">
                                 <div class="text-3xl font-bold">256</div>
-                                <div class="text-sm text-blue-100">Guru S2</div>
+                                <div class="text-sm text-gray-600">Guru S2</div>
                             </div>
                             <div class="bg-white bg-opacity-20 p-4 rounded-lg text-center">
                                 <div class="text-3xl font-bold">128</div>
-                                <div class="text-sm text-blue-100">Guru S1</div>
+                                <div class="text-sm text-gray-600">Guru S1</div>
                             </div>
                         </div>
                     </div>
@@ -515,162 +527,6 @@
                             <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
                         </svg>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Program Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">Program Pendidikan</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Kami menyediakan program pendidikan holistik dari PAUD hingga SMA dengan pendekatan Islami yang modern
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- PAUD -->
-                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-pink-500 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">PAUD</h3>
-                    <p class="text-gray-600 mb-6">Program usia dini dengan pendekatan bermain sambil belajar yang menyenangkan.</p>
-                    <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 transition-colors">
-                        Pelajari Lebih Lanjut →
-                    </a>
-                </div>
-
-                <!-- SD -->
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Sekolah Dasar</h3>
-                    <p class="text-gray-600 mb-6">Membangun fondasi kuat dalam akademik dan karakter Islami yang baik.</p>
-                    <a href="#" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                        Pelajari Lebih Lanjut →
-                    </a>
-                </div>
-
-                <!-- SMP -->
-                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">SMP</h3>
-                    <p class="text-gray-600 mb-6">Mengembangkan potensi remaja dengan pendekatan holistik dan modern.</p>
-                    <a href="#" class="text-green-600 font-semibold hover:text-green-700 transition-colors">
-                        Pelajari Lebih Lanjut →
-                    </a>
-                </div>
-
-                <!-- SMA -->
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">SMA</h3>
-                    <p class="text-gray-600 mb-6">Persiapan optimal menuju perguruan tinggi terbaik dengan karakter unggul.</p>
-                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                        Pelajari Lebih Lanjut →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">Mengapa Memilih Cendekia Muda?</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Keunggulan yang membuat kami menjadi pilihan terbaik untuk pendidikan putra-putri Anda
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Kurikulum Terintegrasi</h3>
-                    <p class="text-gray-600">
-                        Memadukan kurikulum nasional dengan nilai-nilai Islam dalam pembelajaran yang inovatif dan menyenangkan.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Tenaga Pendidik Berkualitas</h3>
-                    <p class="text-gray-600">
-                        Guru-guru berpengalaman dan tersertifikasi dengan dedikasi tinggi dalam membimbing setiap siswa.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Fasilitas Modern</h3>
-                    <p class="text-gray-600">
-                        Laboratorium lengkap, perpustakaan digital, dan fasilitas olahraga yang mendukung pembelajaran optimal.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Prestasi Membanggakan</h3>
-                    <p class="text-gray-600">
-                        Track record prestasi akademik dan non-akademik tingkat regional, nasional, dan internasional.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Lingkungan Islami</h3>
-                    <p class="text-gray-600">
-                        Suasana sekolah yang kondusif dengan penerapan nilai-nilai Islam dalam kehidupan sehari-hari.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bimbingan Personal</h3>
-                    <p class="text-gray-600">
-                        Pendampingan individual untuk mengoptimalkan potensi setiap siswa sesuai minat dan bakatnya.
-                    </p>
                 </div>
             </div>
         </div>
