@@ -7,7 +7,7 @@
                 <div class="grid grid-rows-2 gap-1 auto-rows-max">
                     <div class="row-span-1">
                         <div class="flex items-center mb-4">
-                            <div class="bg-primary-600 p-2 rounded-lg mr-3">
+                            {{-- <div class="bg-primary-600 p-2 rounded-lg mr-3">
                                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2L2 7v10c0 5.55 3.84 9.74 8.9 10.95L12 28l1.1-.05C18.16 26.74 22 22.55 22 17V7L12 2z"/>
                                 </svg>
@@ -15,7 +15,8 @@
                             <div>
                                 <h3 class="text-xl font-bold">Cendekia Muda</h3>
                                 <p class="text-sm text-gray-300">A Universal Islamic School</p>
-                            </div>
+                            </div> --}}
+                            <img class="w-32" src="{{ asset('images/cendekia-muda.png') }}" alt="Cendekia Muda Logo">
                         </div>
                         <p class="text-gray-300 mb-4 max-w-md">
                             Membentuk generasi cendekia yang berkarakter Islami, berakhlak mulia, dan siap menghadapi tantangan zaman dengan ilmu pengetahuan dan teknologi terkini.

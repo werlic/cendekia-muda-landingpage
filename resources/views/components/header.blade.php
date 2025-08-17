@@ -4,7 +4,7 @@
         <div class="flex justify-between items-center py-4">
             <!-- Logo -->
             <div class="flex items-center">
-                <div class="bg-primary-600 p-2 rounded-lg mr-3">
+                {{-- <div class="bg-primary-600 p-2 rounded-lg mr-3">
                     <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2L2 7v10c0 5.55 3.84 9.74 8.9 10.95L12 28l1.1-.05C18.16 26.74 22 22.55 22 17V7L12 2z"/>
                     </svg>
@@ -12,7 +12,8 @@
                 <div>
                     <h1 class="text-xl font-bold text-gray-900">Cendekia Muda</h1>
                     <p class="text-xs text-gray-500">A Universal Islamic School</p>
-                </div>
+                </div> --}}
+                <img class="w-32" src="{{ asset('images/cendekia-muda.png') }}" alt="Cendekia Muda Logo">
             </div>
 
             <!-- Desktop Navigation -->
