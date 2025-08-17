@@ -10,71 +10,226 @@
             <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23e0e7ff" fill-opacity="0.4"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
         </div>
         
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
-                <div class="text-center lg:text-left">
-                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                        <span class="text-primary-600">Sekolah Terbaik</span><br>
-                        Sejagad Raya
-                    </h1>
-                    <p class="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
-                        Bukan Sekadar Belajar, Tapi <span class="font-semibold text-gray-900">Bertumbuh</span><br>
-                        Bersama Allah dan Rasul-Nya
-                    </p>
-                    
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#daftar" class="btn-primary inline-flex items-center justify-center">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            Daftar Sekarang!
-                        </a>
-                        <a href="#konsultasi" class="btn-secondary inline-flex items-center justify-center">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
-                            </svg>
-                            Konsultasi Dahulu!
-                        </a>
-                    </div>
+        <div class="relative max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 flex justify-center">
+            <!-- Carousel container -->
+            <div id="heroCarousel" class="carousel-container relative">
 
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
-                        <div class="text-center">
-                            <div class="text-2xl lg:text-3xl font-bold text-primary-600">25+</div>
-                            <div class="text-sm text-gray-600 mt-1">Tahun Pengalaman</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl lg:text-3xl font-bold text-primary-600">1000+</div>
-                            <div class="text-sm text-gray-600 mt-1">Alumni Terbaik</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl lg:text-3xl font-bold text-primary-600">95%</div>
-                            <div class="text-sm text-gray-600 mt-1">Lulus PTN Terbaik</div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Slide 1 -->
+                <div class="carousel-slide active min-w-6xl max-w-6xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- Left Content -->
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                                <span class="text-primary-600">Sekolah Terbaik</span><br>
+                                Sejagad Raya
+                            </h1>
+                            <p class="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
+                                Bukan Sekadar Belajar, Tapi <span class="font-semibold text-gray-900">Bertumbuh</span><br>
+                                Bersama Allah dan Rasul-Nya
+                            </p>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <a href="#daftar" class="btn-primary inline-flex items-center justify-center">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Daftar Sekarang!
+                                </a>
+                                <a href="#konsultasi" class="btn-secondary inline-flex items-center justify-center">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Konsultasi Dahulu!
+                                </a>
+                            </div>
 
-                <!-- Right Content - Student Image -->
-                <div class="relative">
-                    <div class="relative z-10">
-                        <!-- Placeholder for student image similar to the design -->
-                        <div class="w-full aspect-square max-w-md mx-auto bg-gradient-to-br from-primary-200 to-primary-300 rounded-3xl flex items-center justify-center shadow-2xl">
-                            <div class="text-center text-primary-700">
-                                <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
-                                </svg>
-                                <p class="text-lg font-semibold">Foto Siswa</p>
-                                <p class="text-sm opacity-75">Cendekia Muda</p>
+                            <!-- Stats -->
+                            <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-primary-600">25+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Tahun Pengalaman</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-primary-600">1000+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Alumni Terbaik</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-primary-600">95%</div>
+                                    <div class="text-sm text-gray-600 mt-1">Lulus PTN Terbaik</div>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Right Content - Student Image -->
+                        <div class="relative">
+                            <div class="relative z-10">
+                                <div class="w-full aspect-square max-w-md mx-auto bg-gradient-to-br from-primary-200 to-primary-300 rounded-3xl flex items-center justify-center shadow-2xl">
+                                    <div class="text-center text-primary-700">
+                                        <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <p class="text-lg font-semibold">Foto Siswa</p>
+                                        <p class="text-sm opacity-75">Cendekia Muda</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                            <div class="absolute -bottom-8 -left-4 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
+                        </div>
                     </div>
-                    
-                    <!-- Decorative Elements -->
-                    <div class="absolute -top-4 -right-4 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-                    <div class="absolute -bottom-8 -left-4 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide min-w-6xl max-w-6xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- Left Content -->
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                                <span class="text-green-600">Pendidikan Islam</span><br>
+                                Berkualitas Tinggi
+                            </h1>
+                            <p class="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
+                                Memadukan <span class="font-semibold text-gray-900">Ilmu dan Iman</span><br>
+                                untuk Generasi Qurani
+                            </p>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <a href="#program" class="btn-primary inline-flex items-center justify-center">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
+                                    </svg>
+                                    Lihat Program Kami
+                                </a>
+                                <a href="#galeri" class="btn-secondary inline-flex items-center justify-center">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Galeri Sekolah
+                                </a>
+                            </div>
+
+                            <!-- Stats -->
+                            <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-green-600">100%</div>
+                                    <div class="text-sm text-gray-600 mt-1">Hafal Al-Quran</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-green-600">50+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Program Unggulan</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-green-600">10+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Penghargaan</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="relative">
+                            <div class="relative z-10">
+                                <div class="w-full aspect-square max-w-md mx-auto bg-gradient-to-br from-green-200 to-blue-300 rounded-3xl flex items-center justify-center shadow-2xl">
+                                    <div class="text-center text-green-700">
+                                        <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10.496 2.132a1 1 0 00-.992 0l-7 4A1 1 0 003 8v7a1 1 0 100 2h14a1 1 0 100-2V8a1 1 0 00.496-1.868l-7-4zM6 9a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1zm3 1a1 1 0 012 0v3a1 1 0 11-2 0v-3zm5-1a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <p class="text-lg font-semibold">Fasilitas Sekolah</p>
+                                        <p class="text-sm opacity-75">Modern & Islami</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                            <div class="absolute -bottom-8 -left-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide min-w-6xl max-w-6xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- Left Content -->
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                                <span class="text-purple-600">Prestasi Siswa</span><br>
+                                Tingkat Internasional
+                            </h1>
+                            <p class="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
+                                Mencetak <span class="font-semibold text-gray-900">Juara-Juara</span><br>
+                                di Kancah Dunia
+                            </p>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <a href="#prestasi" class="btn-primary inline-flex items-center justify-center" style="background-color: #8B5CF6;">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Jadwal Kompetisi
+                                </a>
+                                <a href="#alumni" class="btn-secondary inline-flex items-center justify-center border-purple-600 text-purple-600">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                                    </svg>
+                                    Cerita Alumni
+                                </a>
+                            </div>
+
+                            <!-- Stats -->
+                            <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-purple-600">250+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Medali Olimpiade</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-purple-600">75+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Negara Tujuan</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl lg:text-3xl font-bold text-purple-600">30+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Beasiswa Luar Negeri</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="relative">
+                            <div class="relative z-10">
+                                <div class="w-full aspect-square max-w-md mx-auto bg-gradient-to-br from-purple-200 to-pink-300 rounded-3xl flex items-center justify-center shadow-2xl">
+                                    <div class="text-center text-purple-700">
+                                        <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5 3a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V3zm2 0v14h10V3H7zm-5 7a1 1 0 011-1h4a1 1 0 110 2H3a1 1 0 01-1-1zm0 4a1 1 0 011-1h4a1 1 0 110 2H3a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <p class="text-lg font-semibold">Trophy & Penghargaan</p>
+                                        <p class="text-sm opacity-75">Prestasi Internasional</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                            <div class="absolute -bottom-8 -left-4 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Carousel Navigation -->
+                <div class="absolute bottom-6 left-0 right-0 z-10 flex justify-center space-x-2 px-6">
+                    <button class="carousel-dot active" data-slide="0"></button>
+                    <button class="carousel-dot" data-slide="1"></button>
+                    <button class="carousel-dot" data-slide="2"></button>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-control prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-md z-20">
+                    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="carousel-control next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-md z-20">
+                    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -84,6 +239,7 @@
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
             </svg>
         </div>
+        
     </section>
 
     <!-- News & Articles Section -->
@@ -547,13 +703,149 @@
                 Jadilah bagian dari komunitas pelajar yang unggul dalam akademik dan berakhlak mulia
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+                <a href="#" class="bg-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
                     Daftar Online Sekarang
                 </a>
-                <a href="#konsultasi" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200">
+                <a href="#konsultasi" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">
                     Konsultasi Gratis
                 </a>
             </div>
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <!-- Carousel JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const prevBtn = document.querySelector('.carousel-control.prev');
+            const nextBtn = document.querySelector('.carousel-control.next');
+            let currentSlide = 0;
+            let interval;
+
+            // Initialize carousel
+            function initCarousel() {
+                // Hide all slides initially
+                slides.forEach(slide => {
+                    slide.style.opacity = '0';
+                    slide.style.display = 'none';
+                });
+                
+                // Show the first slide
+                slides[0].style.display = 'block';
+                setTimeout(() => {
+                    slides[0].style.opacity = '1';
+                }, 10);
+                
+                // Start autoplay
+                startAutoplay();
+            }
+
+            // Function to change slide
+            function goToSlide(index) {
+                // Hide current slide
+                slides[currentSlide].style.opacity = '0';
+                
+                setTimeout(() => {
+                    slides[currentSlide].style.display = 'none';
+                    
+                    // Update current slide index
+                    currentSlide = index;
+                    if (currentSlide < 0) currentSlide = slides.length - 1;
+                    if (currentSlide >= slides.length) currentSlide = 0;
+                    
+                    // Show new slide
+                    slides[currentSlide].style.display = 'block';
+                    setTimeout(() => {
+                        slides[currentSlide].style.opacity = '1';
+                    }, 10);
+                    
+                    // Update dots
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentSlide);
+                    });
+                }, 300); // Wait for fade out
+            }
+
+            // Previous slide
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+
+            // Next slide
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+
+            // Start autoplay
+            function startAutoplay() {
+                interval = setInterval(() => {
+                    nextSlide();
+                }, 5000); // Change slide every 5 seconds
+            }
+
+            // Stop autoplay
+            function stopAutoplay() {
+                clearInterval(interval);
+            }
+
+            // Event listeners
+            prevBtn.addEventListener('click', () => {
+                stopAutoplay();
+                prevSlide();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                stopAutoplay();
+                nextSlide();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    stopAutoplay();
+                    goToSlide(index);
+                });
+            });
+
+            // Initialize carousel
+            initCarousel();
+
+            // Add styles for carousel
+            // const style = document.createElement('style');
+            // style.textContent = `
+            //     .carousel-container {
+            //         position: relative;
+            //         overflow: hidden;
+            //     }
+            //     .carousel-slide {
+            //         transition: opacity 0.3s ease;
+            //     }
+            //     .carousel-dot {
+            //         width: 12px;
+            //         height: 12px;
+            //         border-radius: 50%;
+            //         background-color: rgba(255, 255, 255, 0.5);
+            //         border: 2px solid rgba(255, 255, 255, 0.7);
+            //         cursor: pointer;
+            //         transition: all 0.3s ease;
+            //     }
+            //     .carousel-dot.active {
+            //         background-color: white;
+            //         transform: scale(1.2);
+            //     }
+            //     .carousel-control {
+            //         opacity: 0.7;
+            //         transition: all 0.3s ease;
+            //         cursor: pointer;
+            //     }
+            //     .carousel-control:hover {
+            //         opacity: 1;
+            //         transform: translateY(-50%) scale(1.1);
+            //     }
+            // `;
+            // document.head.appendChild(style);
+        });
+    </script>
+@endpush
