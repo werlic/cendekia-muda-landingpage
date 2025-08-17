@@ -13,7 +13,7 @@
                     <h1 class="text-xl font-bold text-gray-900">Cendekia Muda</h1>
                     <p class="text-xs text-gray-500">A Universal Islamic School</p>
                 </div> --}}
-                <img class="w-32" src="{{ asset('images/cendekia-muda.png') }}" alt="Cendekia Muda Logo">
+                <a href="{{ route('home') }}" class="btn bg-transparent"><img class="w-32" src="{{ asset('images/cendekia-muda.png') }}" alt="Cendekia Muda Logo"></a>
             </div>
 
             <!-- Desktop Navigation -->

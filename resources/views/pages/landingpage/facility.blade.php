@@ -3,7 +3,7 @@
 @section('title', 'Cendekia Muda - Sekolah Terbaik Sejagad Raya')
 
 @section('content')
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 min-h-[50vh]">
         <h1 class="text-3xl font-bold mb-6">Fasilitas</h1>
         <p class="text-gray-700 mb-4">
             Cendekia Muda menawarkan fasilitas modern dan lengkap untuk mendukung pengembangan siswa secara holistik. Perpustakaan digital kami memiliki koleksi ribuan buku dan jurnal yang dapat diakses secara online maupun offline, memberikan sumber daya yang luas untuk penelitian dan pembelajaran mandiri.

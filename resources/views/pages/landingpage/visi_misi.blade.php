@@ -3,7 +3,7 @@
 @section('title', 'Cendekia Muda - Sekolah Terbaik Sejagad Raya')
 
 @section('content')
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 min-h-[50vh]">
         <h1 class="text-3xl font-bold mb-6">Visi dan Misi Cendekia Muda</h1>
 
         <h2 class="text-2xl font-bold mt-8 mb-4">Visi</h2>

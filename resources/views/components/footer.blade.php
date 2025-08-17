@@ -102,7 +102,7 @@
 
         </div>
 
-        <div class="border-t border-gray-700 mt-12 pt-8">
+        <div class="border-t border-gray-700 mt-6 pt-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">
                     © {{ date('Y') }} Cendekia Muda. All rights reserved.
