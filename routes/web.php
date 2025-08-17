@@ -17,5 +17,9 @@ Route::get('/sma', [HomeController::class, 'sma'])->name('sma');
 // Alumni & Prestasi Route
 Route::get('/alumni-prestasi', [HomeController::class, 'alumniPrestasi'])->name('alumni-prestasi');
 
+// Article Routes
+Route::get('/articles', [HomeController::class, 'getArticles'])->name('articles');
+Route::get('/article/{slug?}', [HomeController::class, 'showArticle'])->name('article');
+
 // Contact Route
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('kontak');

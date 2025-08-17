@@ -80,9 +80,9 @@
                     <!-- Dropdown Menu -->
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                         <div class="py-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Berita</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Artikel</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog</a>
+                            <a href="{{ route('articles') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Articles</a>
+                            <a href="{{ route('article', 'freshmen-camp-2025-spn-polda-jabar') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Featured Article</a>
+                            <a href="{{ route('articles') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Latest News</a>
                         </div>
                     </div>
                 </div>
