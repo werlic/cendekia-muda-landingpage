@@ -62,6 +62,7 @@ class HomeController extends Controller
         'freshmen-camp-2025-spn-polda-jabar' => [
             'title' => 'Langkah Pertama Menuju Masa Depan: Freshmen Camp 2025 di SPN Polda Jabar',
             'slug' => 'freshmen-camp-2025-spn-polda-jabar',
+            'type' => 'article',
             'excerpt' => 'Langkah-langkah kecil mereka hari ini bukan sekadar gerakan fisik tetapi awal dari sebuah perjalanan besar menuju kedewasaan, tanggung jawab, dan kepemimpinan.',
             'image' => 'images/education-back-to-school.png',
             'author' => 'HUMAS CM',
@@ -77,6 +78,7 @@ class HomeController extends Controller
         'hafal-30-juz-siswi-smp' => [
             'title' => 'Hafal 30 Juz Siswi SMP Merubah Dunia Pendidikan',
             'slug' => 'hafal-30-juz-siswi-smp',
+            'type' => 'article',
             'excerpt' => 'Mari bersama menjadi generasi Qur\'ani yang unggul dalam pendidikan dan akhlak.',
             'image' => 'images/Journal2.png',
             'author' => 'HUMAS CM',
@@ -88,6 +90,7 @@ class HomeController extends Controller
         'juara-renang-kelas-dunia' => [
             'title' => 'Juara Renang Kelas Dunia! Cendekia Muda Solutanya',
             'slug' => 'juara-renang-kelas-dunia',
+            'type' => 'article',
             'excerpt' => 'Prestasi membanggakan di kancah internasional dari siswa berprestasi.',
             'image' => 'images/Journal1.png',
             'author' => 'HUMAS CM',
@@ -98,11 +101,59 @@ class HomeController extends Controller
         ]
     ];
 
+    // Sample publication data
+    private $publications = [
+        'jurnal-pendidikan-islam-2025' => [
+            'title' => 'Jurnal Pendidikan Islam: Integrasi Nilai-Nilai Qurani dalam Pembelajaran Modern',
+            'slug' => 'jurnal-pendidikan-islam-2025',
+            'type' => 'publication',
+            'excerpt' => 'Penelitian mendalam tentang implementasi nilai-nilai Islam dalam sistem pendidikan modern di era digital.',
+            'image' => 'images/Journal3.png',
+            'author' => 'Tim Peneliti CM',
+            'date' => '15 Juli 2025',
+            'category' => 'Jurnal',
+            'download_url' => '#',
+            'content' => '<p class="text-justify">Jurnal ini membahas pentingnya integrasi nilai-nilai Qurani dalam pembelajaran modern. Penelitian dilakukan selama satu tahun akademik dengan melibatkan siswa-siswi dari berbagai tingkat pendidikan.</p>
+                            <p class="text-justify">Hasil penelitian menunjukkan bahwa pendekatan integratif antara pembelajaran akademik dan nilai-nilai spiritual Islam memberikan dampak positif terhadap karakter dan prestasi siswa.</p>
+                            <p class="text-justify">Metodologi penelitian menggunakan pendekatan kualitatif dan kuantitatif dengan sampel 500 siswa dari berbagai jenjang pendidikan di SMA Islam Cendekia Muda.</p>'
+        ],
+        'buku-panduan-tahfidz' => [
+            'title' => 'Panduan Tahfidz Al-Quran untuk Siswa Sekolah Islam',
+            'slug' => 'buku-panduan-tahfidz',
+            'type' => 'publication',
+            'excerpt' => 'Buku panduan lengkap untuk program tahfidz yang telah terbukti efektif di lingkungan sekolah.',
+            'image' => 'images/Journal2.png',
+            'author' => 'Ustadz Ahmad Fauzi',
+            'date' => '20 Juni 2025',
+            'category' => 'Buku Panduan',
+            'download_url' => '#',
+            'content' => '<p class="text-justify">Buku panduan ini berisi metodologi pembelajaran tahfidz yang telah diuji coba dan terbukti efektif dalam program tahfidz di SMA Islam Cendekia Muda.</p>
+                            <p class="text-justify">Panduan ini mencakup teknik menghafal yang efektif, cara muraja\'ah yang benar, dan tips menjaga hafalan dalam jangka panjang.</p>
+                            <p class="text-justify">Dilengkapi dengan jadwal harian, target mingguan, dan evaluasi bulanan untuk memastikan progress yang optimal dalam program tahfidz.</p>'
+        ],
+        'penelitian-metode-pembelajaran' => [
+            'title' => 'Penelitian: Efektivitas Metode Blended Learning di Era Post-Pandemic',
+            'slug' => 'penelitian-metode-pembelajaran',
+            'type' => 'publication',
+            'excerpt' => 'Studi komprehensif tentang efektivitas pembelajaran campuran pasca pandemi COVID-19.',
+            'image' => 'images/Journal1.png',
+            'author' => 'Dr. Siti Aminah, M.Pd',
+            'date' => '10 Agustus 2025',
+            'category' => 'Penelitian',
+            'download_url' => '#',
+            'content' => '<p class="text-justify">Penelitian ini menganalisis efektivitas metode blended learning yang diterapkan di SMA Islam Cendekia Muda selama dan setelah pandemi COVID-19.</p>
+                            <p class="text-justify">Data dikumpulkan dari 300 siswa dan 50 guru selama periode 2 tahun akademik, dengan fokus pada pencapaian akademik, engagement siswa, dan kepuasan pembelajaran.</p>
+                            <p class="text-justify">Hasil menunjukkan peningkatan signifikan dalam hasil belajar siswa dan efisiensi waktu pembelajaran dengan model blended learning yang tepat.</p>'
+        ]
+    ];
+
     // Article Methods
     public function getArticles()
     {
-        // This would typically fetch articles from database
-        $articles = $this->articles;
+        // Filter only articles (type = 'article')
+        $articles = array_filter($this->articles, function($item) {
+            return $item['type'] === 'article';
+        });
         
         return view('pages.landingpage.articles', compact('articles'));
     }
@@ -114,8 +165,40 @@ class HomeController extends Controller
             $slug = 'freshmen-camp-2025-spn-polda-jabar';
         }
 
-        $article = $this->articles[$slug] ? $this->articles['freshmen-camp-2025-spn-polda-jabar'] : null;
+        $article = isset($this->articles[$slug]) ? $this->articles[$slug] : null;
+        
+        if (!$article || $article['type'] !== 'article') {
+            abort(404);
+        }
         
         return view('pages.landingpage.article', compact('article'));
+    }
+
+    // Publication Methods
+    public function getPublications()
+    {
+        // Filter only publications (type = 'publication')
+        $publications = array_filter($this->publications, function($item) {
+            return $item['type'] === 'publication';
+        });
+        
+        return view('pages.landingpage.publications', compact('publications'));
+    }
+
+    public function showPublication($slug = null)
+    {
+        // If no slug provided, show first publication
+        if (!$slug) {
+            $firstPublication = array_keys($this->publications)[0];
+            $slug = $firstPublication;
+        }
+
+        $publication = isset($this->publications[$slug]) ? $this->publications[$slug] : null;
+        
+        if (!$publication || $publication['type'] !== 'publication') {
+            abort(404);
+        }
+        
+        return view('pages.landingpage.publication', compact('publication'));
     }
 }

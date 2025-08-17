@@ -1,7 +1,6 @@
 @extends('layouts.landingpage')
 
-@section('title', 'Artikel - Cendekia Muda')
-@section('meta_description', 'Baca berita terbaru dan artikel inspiratif dari SMA Islam Cendekia Muda')
+@section('title', 'Publikasi - Cendekia Muda')
 
 @section('content')
 <main class="min-h-screen bg-gray-50">
@@ -13,7 +12,7 @@
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                 </svg>
-                <span class="text-gray-900 font-medium">Artikel</span>
+                <span class="text-gray-900 font-medium">Publikasi</span>
             </nav>
         </div>
     </div>
@@ -22,9 +21,9 @@
     <div class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Artikel & Berita</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Publikasi Ilmiah</h1>
                 <p class="text-xl text-primary-100 max-w-3xl mx-auto">
-                    Temukan berita terbaru, prestasi, dan cerita inspiratif dari SMA Islam Cendekia Muda
+                    Kumpulan karya ilmiah, penelitian, dan publikasi dari SMA Islam Cendekia Muda
                 </p>
             </div>
         </div>
@@ -35,70 +34,72 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex space-x-8 py-4">
                 <button class="text-primary-600 border-b-2 border-primary-600 pb-2 font-medium">Semua</button>
-                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Berita</button>
-                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Prestasi</button>
-                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Olahraga</button>
-                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Kegiatan</button>
+                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Jurnal</button>
+                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Penelitian</button>
+                <button class="text-gray-500 hover:text-primary-600 pb-2 font-medium">Buku Panduan</button>
             </div>
         </div>
     </div>
 
-    <!-- Articles Grid -->
+    <!-- Publications Grid -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            @foreach($articles as $article)
+            @foreach($publications as $publication)
             <article class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                <!-- Article Image -->
+                <!-- Publication Image -->
                 <div class="aspect-video bg-gray-200 relative overflow-hidden">
-                    <img src="{{ asset($article['image']) }}" 
-                         alt="{{ $article['title'] }}" 
+                    <img src="{{ asset($publication['image']) }}" 
+                         alt="{{ $publication['title'] }}" 
                          class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     <div class="absolute top-4 left-4">
-                        <span class="
-                            @if($article['category'] === 'Prestasi') bg-green-600 text-white
-                            @elseif($article['category'] === 'Olahraga') bg-blue-600 text-white
-                            @elseif($article['category'] === 'Kegiatan') bg-purple-600 text-white
-                            @else bg-primary-600 text-white
-                            @endif
-                            px-3 py-1 rounded-full text-sm font-medium
-                        ">
-                            {{ $article['category'] }}
+                        <span class="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            {{ $publication['category'] }}
+                        </span>
+                    </div>
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-white bg-opacity-90 text-gray-700 px-2 py-1 rounded text-xs">
+                            <i class="fas fa-download mr-1"></i>PDF
                         </span>
                     </div>
                 </div>
 
-                <!-- Article Content -->
+                <!-- Publication Content -->
                 <div class="p-6">
                     <!-- Meta Info -->
                     <div class="flex items-center text-sm text-gray-500 mb-3">
                         <div class="flex items-center mr-4">
                             <i class="far fa-user mr-1"></i>
-                            {{ $article['author'] }}
+                            {{ $publication['author'] }}
                         </div>
                         <div class="flex items-center">
                             <i class="far fa-calendar mr-1"></i>
-                            {{ $article['date'] }}
+                            {{ $publication['date'] }}
                         </div>
                     </div>
 
                     <!-- Title -->
                     <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                        <a href="{{ route('article', $article['slug']) }}" 
+                        <a href="{{ route('publication', $publication['slug']) }}" 
                            class="hover:text-primary-600 transition-colors">
-                            {{ $article['title'] }}
+                            {{ $publication['title'] }}
                         </a>
                     </h3>
 
                     <!-- Excerpt -->
                     <p class="text-gray-600 mb-4 line-clamp-3">
-                        {{ $article['excerpt'] }}
+                        {{ $publication['excerpt'] }}
                     </p>
 
-                    <!-- Read More -->
-                    <div class="pt-4 border-t">
-                        <a href="{{ route('article', $article['slug']) }}" 
+                    <!-- Actions -->
+                    <div class="flex justify-between items-center pt-4 border-t">
+                        <a href="{{ route('publication', $publication['slug']) }}" 
                            class="text-primary-600 hover:text-primary-700 font-medium text-sm">
                             Baca Selengkapnya →
+                        </a>
+                        <a href="{{ $publication['download_url'] }}" 
+                           class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                            <i class="fas fa-download mr-1"></i>
+                            Download
                         </a>
                     </div>
                 </div>
@@ -106,32 +107,29 @@
             @endforeach
         </div>
 
-        @if(count($articles) === 0)
+        @if(count($publications) === 0)
         <div class="text-center py-12">
             <div class="text-gray-400 mb-4">
-                <i class="fas fa-newspaper text-6xl"></i>
+                <i class="fas fa-file-alt text-6xl"></i>
             </div>
-            <h3 class="text-xl font-medium text-gray-900 mb-2">Belum Ada Artikel</h3>
-            <p class="text-gray-500">Artikel akan segera tersedia. Silakan kembali lagi nanti.</p>
+            <h3 class="text-xl font-medium text-gray-900 mb-2">Belum Ada Publikasi</h3>
+            <p class="text-gray-500">Publikasi akan segera tersedia. Silakan kembali lagi nanti.</p>
         </div>
         @endif
     </div>
 
-    <!-- Newsletter Section -->
+    <!-- CTA Section -->
     <div class="bg-primary-50 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Jangan Lewatkan Berita Terbaru</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Ingin Berkontribusi?</h2>
             <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Berlangganan newsletter kami untuk mendapatkan informasi terbaru tentang kegiatan dan prestasi sekolah.
+                Kami terbuka untuk kolaborasi penelitian dan publikasi ilmiah. Hubungi tim akademik kami untuk informasi lebih lanjut.
             </p>
-            <div class="max-w-md mx-auto flex">
-                <input type="email" 
-                       placeholder="Masukkan email Anda" 
-                       class="flex-1 px-4 py-3 border border-gray-300 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
-                <button class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-r-xl transition-colors">
-                    Berlangganan
-                </button>
-            </div>
+            <a href="{{ route('kontak') }}" 
+               class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-colors">
+                <i class="far fa-envelope mr-2"></i>
+                Hubungi Kami
+            </a>
         </div>
     </div>
 </main>

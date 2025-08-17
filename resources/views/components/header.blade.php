@@ -72,7 +72,7 @@
 
                 <div class="relative group">
                     <button class="nav-link flex items-center">
-                        Publication/Article
+                        Articles
                         <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -80,9 +80,27 @@
                     <!-- Dropdown Menu -->
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                         <div class="py-1">
-                            <a href="{{ route('articles') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Articles</a>
-                            <a href="{{ route('article', 'freshmen-camp-2025-spn-polda-jabar') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Featured Article</a>
-                            <a href="{{ route('articles') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Latest News</a>
+                            <a href="{{ route('articles') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Semua Artikel</a>
+                            <a href="{{ route('article', 'freshmen-camp-2025-spn-polda-jabar') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Artikel Terbaru</a>
+                            <a href="{{ route('articles') }}?category=prestasi" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Artikel Prestasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <button class="nav-link flex items-center">
+                        Publications
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="py-1">
+                            <a href="{{ route('publications') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Semua Publikasi</a>
+                            <a href="{{ route('publications') }}?category=jurnal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Jurnal</a>
+                            <a href="{{ route('publications') }}?category=penelitian" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Penelitian</a>
+                            <a href="{{ route('publications') }}?category=buku" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Buku Panduan</a>
                         </div>
                     </div>
                 </div>
