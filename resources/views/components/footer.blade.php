@@ -31,8 +31,8 @@
                                 </svg>
                                 <div>
                                     <p class="text-gray-300 text-sm">
-                                        Jl. Pendidikan No. 123<br>
-                                        Jakarta Selatan 12345
+                                        Jl. Puri Ayu Pratama No. 17 Arcamanik<br>
+                                        Bandung, Jawa Barat, Indonesia
                                     </p>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                                 <svg class="w-5 h-5 text-primary-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                                 </svg>
-                                <p class="text-gray-300 text-sm">+62 21 1234 5678</p>
+                                <p class="text-gray-300 text-sm">+62 821 3456 7890</p>
                             </div>
                             <div class="flex items-center">
                                 <svg class="w-5 h-5 text-primary-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
