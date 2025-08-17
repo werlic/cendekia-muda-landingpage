@@ -377,29 +377,23 @@
                     </div> --}}
                     
                     <div class="grid grid-cols-3 lg:grid-cols-6 gap-4">
-                        <div class="card text-center">
-                            <div class="text-red-500 text-4xl font-bold mb-2"></div>
-                            <div class="text-xs font-semibold text-red-500">Unsustainable Development Goals</div>
+                        <div class="card text-center p-1">
+                            <img src="{{ asset('images/LogoSDGs.png') }}" alt="Unsustainable Development Goals" class="h-full">
                         </div>
-                        <div class="card text-center">
-                            <div class="text-red-500 text-4xl font-bold mb-2">1</div>
-                            <div class="text-xs font-semibold text-red-500">NO POVERTY</div>
+                        <div class="card text-center p-1">
+                            <img src="{{ asset('/images/NoPoverty.png') }}" alt="No Poverty" class="h-full">
                         </div>
-                        <div class="card text-center">
-                            <div class="text-yellow-500 text-4xl font-bold mb-2">2</div>
-                            <div class="text-xs font-semibold text-yellow-600">ZERO HUNGER</div>
+                        <div class="card text-center p-1">
+                            <img src="{{ asset('/images/GoodHunger.png') }}" alt="Good Hunger" class="h-full">
                         </div>
-                        <div class="card text-center">
-                            <div class="text-green-500 text-4xl font-bold mb-2">3</div>
-                            <div class="text-xs font-semibold text-green-600">GOOD HEALTH AND WELL-BEING</div>
+                        <div class="card text-center p-1">
+                            <img src="{{ asset('/images/GoodHealth.png') }}" alt="Good Health" class="h-full">
                         </div>
-                        <div class="card text-center">
-                            <div class="text-red-600 text-4xl font-bold mb-2">4</div>
-                            <div class="text-xs font-semibold text-red-600">QUALITY EDUCATION</div>
+                        <div class="card text-center p-1">
+                            <img src="{{ asset('/images/SDGs4-EducationQuality.png') }}" alt="Education Quality" class="h-full">
                         </div>
-                        <div class="card text-center">
-                            <div class="text-orange-500 text-4xl font-bold mb-2">5</div>
-                            <div class="text-xs font-semibold text-orange-600">GENDER EQUALITY</div>
+                        <div class="card text-center p-1">
+                            <img src="{{ asset('/images/SDGs5-GenderEquality.png') }}" alt="Gender Equality" class="h-full">
                         </div>
                     </div>
                 </div>
@@ -593,7 +587,7 @@
             
             <div class="relative max-w-4xl mx-auto">
                 <div class="aspect-video bg-gradient-to-br from-orange-200 via-yellow-200 to-green-200 rounded-2xl relative overflow-hidden shadow-2xl">
-                    <!-- Video Placeholder with Play Button -->
+                    {{-- <!-- Video Placeholder with Play Button -->
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer">
                             <svg class="w-8 h-8 text-blue-600 ml-1" fill="currentColor" viewBox="0 0 20 20">
@@ -602,7 +596,8 @@
                         </div>
                     </div>
                     <!-- Blurred background overlay -->
-                    <div class="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm"></div> --}}
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/t8c9YG5FAsc?si=d8n_uDSrkm8dfp7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 
                 <!-- Video Description -->
