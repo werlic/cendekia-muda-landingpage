@@ -1,3 +1,31 @@
+# Cendekia Muda Landing Page
+Cara running aplikasi ini:
+1. Pastikan sudah menginstall [Composer](https://getcomposer.org/download/) dan [Node.js](https://nodejs.org/en/download/).
+2. Clone repository ini ke dalam folder project Anda.
+3. Buka terminal di dalam folder project, lalu jalankan perintah berikut:
+```
+composer install
+```
+4. Jalankan juga perintah berikut untuk menginstall dependensi frontend:
+```
+npm install
+```
+5. Buat file `.env` dengan menyalin dari file `.env.example`:
+```
+cp .env.example .env
+```
+6. Atur konfigurasi database pada file `.env` sesuai dengan database yang Anda gunakan.
+7. Sebelum run, build frontend dengan perintah:
+```
+npm run build
+```
+8. Lalu, jalankan perintah berikut untuk menjalankan aplikasi:
+```
+php artisan serve
+```
+
+# Laravel about -------------------------------------------
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
