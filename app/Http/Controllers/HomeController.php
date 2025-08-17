@@ -25,4 +25,35 @@ class HomeController extends Controller
     {
         return view('pages.landingpage.history');
     }
+
+    // Unit/Department Methods
+    public function paud()
+    {
+        return view('pages.landingpage.paud');
+    }
+
+    public function sd()
+    {
+        return view('pages.landingpage.sd');
+    }
+
+    public function smp()
+    {
+        return view('pages.landingpage.smp');
+    }
+
+    public function sma()
+    {
+        return view('pages.landingpage.sma');
+    }
+
+    public function alumniPrestasi()
+    {
+        return view('pages.landingpage.alumni-prestasi');
+    }
+
+    public function kontak()
+    {
+        return view('pages.landingpage.kontak');
+    }
 }

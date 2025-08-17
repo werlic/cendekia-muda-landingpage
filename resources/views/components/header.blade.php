@@ -45,10 +45,10 @@
                     <!-- Dropdown Menu -->
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                         <div class="py-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">PAUD</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SD</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SMP</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SMA</a>
+                            <a href="{{ route('paud') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">PAUD</a>
+                            <a href="{{ route('sd') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SD</a>
+                            <a href="{{ route('smp') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SMP</a>
+                            <a href="{{ route('sma') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SMA</a>
                         </div>
                     </div>
                 </div>
@@ -63,9 +63,9 @@
                     <!-- Dropdown Menu -->
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                         <div class="py-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alumni Terbaik</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prestasi Sekolah</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prestasi Siswa</a>
+                            <a href="{{ route('alumni-prestasi') }}#alumni-terbaik" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Alumni Terbaik</a>
+                            <a href="{{ route('alumni-prestasi') }}#prestasi-sekolah" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prestasi Sekolah</a>
+                            <a href="{{ route('alumni-prestasi') }}#prestasi-siswa" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Prestasi Siswa</a>
                         </div>
                     </div>
                 </div>
@@ -97,9 +97,9 @@
                     <!-- Dropdown Menu -->
                     <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                         <div class="py-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kontak</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Lokasi</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">WhatsApp</a>
+                            <a href="{{ route('kontak') }}#kontak" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kontak</a>
+                            <a href="{{ route('kontak') }}#lokasi" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Lokasi</a>
+                            <a href="{{ route('kontak') }}#whatsapp" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">WhatsApp</a>
                         </div>
                     </div>
                 </div>
@@ -149,10 +149,10 @@
                             </svg>
                         </button>
                         <div id="unit-submenu" class="hidden pl-6 space-y-2">
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">PAUD</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">SD</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">SMP</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">SMA</a>
+                            <a href="{{ route('paud') }}" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">PAUD</a>
+                            <a href="{{ route('sd') }}" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">SD</a>
+                            <a href="{{ route('smp') }}" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">SMP</a>
+                            <a href="{{ route('sma') }}" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">SMA</a>
                         </div>
                     </div>
 
@@ -164,9 +164,9 @@
                             </svg>
                         </button>
                         <div id="alumni-submenu" class="hidden pl-6 space-y-2">
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Alumni Terbaik</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Prestasi Sekolah</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Prestasi Siswa</a>
+                            <a href="{{ route('alumni-prestasi') }}#alumni-terbaik" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Alumni Terbaik</a>
+                            <a href="{{ route('alumni-prestasi') }}#prestasi-sekolah" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Prestasi Sekolah</a>
+                            <a href="{{ route('alumni-prestasi') }}#prestasi-siswa" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Prestasi Siswa</a>
                         </div>
                     </div>
 
@@ -192,9 +192,9 @@
                             </svg>
                         </button>
                         <div id="contact-submenu" class="hidden pl-6 space-y-2">
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Kontak</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Lokasi</a>
-                            <a href="#" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">WhatsApp</a>
+                            <a href="{{ route('kontak') }}#kontak" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Kontak</a>
+                            <a href="{{ route('kontak') }}#lokasi" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">Lokasi</a>
+                            <a href="{{ route('kontak') }}#whatsapp" class="block text-gray-600 hover:text-primary-600 px-3 py-1 text-sm">WhatsApp</a>
                         </div>
                     </div>
 
