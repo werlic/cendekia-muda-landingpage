@@ -10,4 +10,19 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function facility()
+    {
+        return view('pages.landingpage.facility');
+    }
+
+    public function visiMisi()
+    {
+        return view('pages.landingpage.visi_misi');
+    }
+
+    public function history()
+    {
+        return view('pages.landingpage.history');
+    }
 }
