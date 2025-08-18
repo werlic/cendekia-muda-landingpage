@@ -30,52 +30,44 @@
         <!-- Your Courses Section -->
         <div class="mb-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Course 1 - Gaya Gravitasi -->
-                <div class="bg-gradient-to-br from-green-400 to-blue-500 rounded-xl p-6 text-white cursor-pointer hover:shadow-lg transition-shadow">
-                    <div class="h-16 mb-4 flex items-center">
-                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                <!-- Course 1 - Matematika -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden cursor-pointer hover:shadow-md transition-shadow" onclick="location.href='{{ route('learning.learn.math') }}'">
+                    <div class="h-32 bg-gradient-to-r from-teal-400 to-blue-500"></div>
+                    <div class="bg-blue-400 p-4 text-white">
+                        <h3 class="text-lg font-bold mb-1">Matematika</h3>
+                        <p class="text-sm text-opacity-90 mb-2">M. Agung Prayogo, M.Si</p>
+                        <p class="text-xs text-opacity-70">© last opened 3 minutes ago</p>
                     </div>
-                    <h3 class="text-lg font-bold mb-1">Gaya Gravitasi</h3>
-                    <p class="text-sm text-white text-opacity-90 mb-2">Nabila Haifa, M.Si</p>
-                    <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                 </div>
 
-                <!-- Course 2 - Kalkulus II -->
-                <div class="bg-gradient-to-br from-teal-500 to-green-600 rounded-xl p-6 text-white cursor-pointer hover:shadow-lg transition-shadow">
-                    <div class="h-16 mb-4 flex items-center">
-                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                <!-- Course 2 - Gaya Gravitasi -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden cursor-pointer hover:shadow-md transition-shadow" onclick="location.href='{{ route('learning.learn.math') }}'">
+                    <div class="h-32 bg-gradient-to-br from-green-400 to-blue-500"></div>
+                    <div class="bg-blue-400 p-4 text-white">
+                        <h3 class="text-lg font-bold mb-1">Gaya Gravitasi</h3>
+                        <p class="text-sm text-white text-opacity-90 mb-2">Nabila Haifa, M.Si</p>
+                        <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                     </div>
-                    <h3 class="text-lg font-bold mb-1">Kalkulus II</h3>
-                    <p class="text-sm text-white text-opacity-90 mb-2">M. Agung Prayogo, M.Si</p>
-                    <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                 </div>
 
                 <!-- Course 3 - Sejarah Indonesia II -->
-                <div class="bg-gradient-to-br from-orange-400 to-red-500 rounded-xl p-6 text-white cursor-pointer hover:shadow-lg transition-shadow">
-                    <div class="h-16 mb-4 flex items-center">
-                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden cursor-pointer hover:shadow-md transition-shadow" onclick="location.href='{{ route('learning.learn.math') }}'">
+                    <div class="h-32 bg-gradient-to-br from-orange-400 to-red-500"></div>
+                    <div class="bg-blue-400 p-4 text-white">
+                        <h3 class="text-lg font-bold mb-1">Sejarah Indonesia II</h3>
+                        <p class="text-sm text-white text-opacity-90 mb-2">Yudi Karyanto, S.Ag, M.Pd</p>
+                        <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                     </div>
-                    <h3 class="text-lg font-bold mb-1">Sejarah Indonesia II</h3>
-                    <p class="text-sm text-white text-opacity-90 mb-2">Yudi Karyanto, S.Ag, M.Pd</p>
-                    <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                 </div>
 
                 <!-- Course 4 - Fotosintesis Tumbuhan -->
-                <div class="bg-gradient-to-br from-blue-400 to-indigo-600 rounded-xl p-6 text-white cursor-pointer hover:shadow-lg transition-shadow">
-                    <div class="h-16 mb-4 flex items-center">
-                        <svg class="w-12 h-12 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden cursor-pointer hover:shadow-md transition-shadow" onclick="location.href='{{ route('learning.learn.math') }}'">
+                    <div class="h-32 bg-gradient-to-br from-blue-400 to-indigo-600"></div>
+                    <div class="bg-blue-400 p-4 text-white">
+                        <h3 class="text-lg font-bold mb-1">Fotosintesis Tumbuhan</h3>
+                        <p class="text-sm text-white text-opacity-90 mb-2">Hilda Hidayat, M.Si</p>
+                        <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                     </div>
-                    <h3 class="text-lg font-bold mb-1">Fotosintesis Tumbuhan</h3>
-                    <p class="text-sm text-white text-opacity-90 mb-2">Hilda Hidayat, M.Si</p>
-                    <p class="text-xs text-white text-opacity-70">© last opened 3 minutes ago</p>
                 </div>
             </div>
         </div>
