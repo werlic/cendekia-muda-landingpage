@@ -437,8 +437,9 @@
     </section>
 
     <!-- School Profile Section -->
-    <section class="py-20 ">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 card bg-gradient-to-br from-blue-500 to-teal-400 text-white">
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 card bg-gradient-to-br from-blue-500 to-teal-400 text-white bg-cover bg-center"
+            style="background-image: url('{{ asset('images/BackgroundSchoolInfo.png') }}');">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
                 <!-- Left Content -->
                 <div class="lg:col-span-2">
@@ -463,12 +464,14 @@
                 </div>
             </div>
             
-            <div class="card grid grid-cols-3 lg:grid-cols-6 gap-12 items-center mt-3">
+            <div class="card grid grid-cols-3 lg:grid-cols-6 gap-12 items-center mt-3 pb-0">
                 <!-- Left Content -->
-                <div class="col-span-1 lg:col-span-2 h-full flex items-center">
-                    <div class="text-gray-900">
-                        <h1 class="text-4xl font-bold mb-8">Sekolah<br>Inklusi</h1>
-                        <p class="text-gray-600 mb-8">God Centered Education<br>Shirah Nabawiyah Based-Learning</p>
+                <div class="col-span-1 lg:col-span-2 h-full flex items-end justify-center bg-gradient-to-t from-blue-950 to-transparent">
+                    <div class="text-gray-100">
+                        <h1 class="text-4xl font-bold mb-8">Sekolah
+                            <br><span class="text-6xl">Inklusi</span>
+                        </h1>
+                        <p class="text-gray-100 mb-8">God Centered Education<br>Shirah Nabawiyah Based-Learning</p>
                     </div>
                 </div>
 
