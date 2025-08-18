@@ -116,41 +116,11 @@
 
         <!-- Right Panel - Student Showcase -->
         <div class="hidden lg:block relative w-0 flex-1">
-            <div class="absolute inset-0 h-full w-full object-cover bg-gradient-to-br from-blue-400 to-blue-600">
+            <div class="inset-0 h-full w-full object-cover bg-gradient-to-br from-blue-400 to-blue-600">
                 <!-- Student Card -->
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-sm mx-auto">
-                        <!-- Header -->
-                        <div class="text-center mb-6">
-                            <p class="text-blue-600 font-medium text-sm mb-1">Segenap Keluarga</p>
-                            <h2 class="text-2xl font-bold text-blue-600 mb-1">SMA Islam</h2>
-                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Cendekia Muda</h3>
-                            <p class="text-blue-600 text-sm">mengucapkan</p>
-                            <p class="text-blue-600 text-sm font-medium">selamat kepada</p>
-                        </div>
-
-                        <!-- Student Info Card -->
-                        <div class="bg-blue-500 rounded-lg p-4 text-white text-center mb-4">
-                            <h4 class="text-xl font-bold mb-1">Fathimah</h4>
-                            <h4 class="text-xl font-bold mb-2">A. Zahrani</h4>
-                            <p class="text-blue-100 text-sm">Siswi SMA Cendekia Muda</p>
-                        </div>
-
-                        <!-- Achievement Badge -->
-                        <div class="relative">
-                            <div class="bg-blue-600 rounded-full p-6 mx-auto w-24 h-24 flex items-center justify-center mb-4">
-                                <div class="text-center">
-                                    <p class="text-white text-xs font-medium">Yang telah lolos</p>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <p class="text-blue-600 font-bold text-sm">SNBP, SNPMB</p>
-                                <p class="text-blue-600 font-bold text-sm">FSRD Institut</p>
-                                <p class="text-blue-600 font-bold text-sm">Teknologi</p>
-                                <p class="text-blue-600 font-bold text-sm">Bandung (ITB)</p>
-                                <p class="text-blue-600 font-bold text-lg mt-2">2025</p>
-                            </div>
-                        </div>
+                <div class="w-full h-full flex items-center justify-center px-8 py-8 lg:py-16">
+                    <div class="bg-cover bg-center rounded-2xl shadow-2xl w-full h-full"
+                    style="background-image: url('{{ asset('assets/images/classroom.jpg') }}')">
                     </div>
                 </div>
             </div>
