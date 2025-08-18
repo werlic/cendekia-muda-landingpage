@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Register learning app components
+        Blade::component('learning-sidebar', \App\View\Components\Learning\Sidebar::class);
+        Blade::component('learning-header', \App\View\Components\Learning\Header::class);
     }
 }
