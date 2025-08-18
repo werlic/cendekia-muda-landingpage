@@ -253,97 +253,100 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Main News Card -->
-                <div class="lg:col-span-2 bg-gradient-to-r from-red-500 to-orange-500 text-white p-8 rounded-3xl relative overflow-hidden">
-                    <div class="relative z-10">
-                        <h3 class="text-2xl lg:text-3xl font-bold mb-4">
-                            SD Islam Cendekia Muda Masuk 10 Terbaik Sejagad Raya Dunia!
-                        </h3>
-                        <p class="text-red-100 mb-6">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
+                <div class="lg:col-span-2 text-white rounded-3xl relative overflow-hidden min-h-96" 
+                    style="background-image: url('{{ asset('assets/images/building.jpg') }}'); background-size: cover; background-position: center;">
+                    <div class="h-full w-full flex flex-col items-end bg-gradient-to-t from-red-500 to-transparent p-8 rounded-3xl">
+                        <div class="mt-auto">
+                            <h3 class="text-2xl lg:text-3xl font-bold mb-4">
+                                SD Islam Cendekia Muda Masuk 10 Terbaik Sejagad Raya Dunia!
+                            </h3>
+                            <p class="text-red-100 mb-6">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
                     </div>
-                    <div class="absolute -right-8 -bottom-8 opacity-20">
+                    {{-- <div class="absolute -right-8 -bottom-8 opacity-20">
                         <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <!-- News Card 1 -->
-                <div class="bg-gradient-to-br from-teal-400 to-blue-500 text-white p-6 rounded-3xl">
-                    <div class="mb-4">
-                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
-                            🧒
+                <div class="text-white rounded-3xl min-h-96"
+                    style="background-image: url('{{ asset('assets/images/little-boy-camera.jpg') }}'); background-size: cover; background-position: center;">
+                    <div class="h-full w-full flex flex-col items-end p-6 bg-gradient-to-t from-teal-400 to-transparent rounded-3xl">
+                        <div class="mt-auto">
+                            <h4 class="text-lg font-bold mb-2">
+                                Fatih Terpilih Menjadi Koordinator Anak Daycare QDC 2025-2026
+                            </h4>
+                            <p class="text-sm text-blue-100">24 Juli 2025</p>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">
-                            Fatih Terpilih Menjadi Koordinator Anak Daycare QDC 2025-2026
-                        </h4>
-                        <p class="text-sm text-blue-100">24 Juli 2025</p>
                     </div>
                 </div>
 
                 <!-- News Card 2 -->
-                <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-3xl">
-                    <div class="mb-4">
-                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
-                            ⚽
+                <div class="bg-cover bg-center text-white rounded-3xl"
+                    style="background-image: url('{{ asset('assets/images/Cristiano Ronaldo - FootyRenders.png') }}');">
+                    <div class="h-full w-full flex flex-col items-end p-6 bg-gradient-to-t from-blue-500 to-transparent rounded-3xl">
+                        <div class="mt-auto">
+                            <h4 class="text-lg font-bold mb-2">
+                                SMA Islam Cendekia Muda Terima Kunjungan dari Ronaldo Al Nassr FC
+                            </h4>
+                            <p class="text-sm text-purple-100">24 Juli 2025</p>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">
-                            SMA Islam Cendekia Muda Terima Kunjungan dari Ronaldo Al Nassr FC
-                        </h4>
-                        <p class="text-sm text-purple-100">24 Juli 2025</p>
                     </div>
                 </div>
 
                 <!-- News Card 3 -->
-                <div class="bg-gradient-to-br from-green-400 to-blue-500 text-white p-6 rounded-3xl">
-                    <div class="mb-4">
-                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
-                            📚
+                <div class="bg-cover bg-center text-white rounded-3xl min-h-60"
+                    style="background-image: url('{{ asset('assets/images/library.jpg') }}');">
+                    <div class="h-full w-full flex flex-col items-end p-6 bg-gradient-to-t from-green-400 to-transparent rounded-3xl">
+                        <div class="mt-auto">
+                            <h4 class="text-lg font-bold mb-2">
+                                Hafal 30 Juz! Siswi SMP Merubah Dunia Pendidikan
+                            </h4>
+                            <p class="text-sm text-blue-100">24 Juli 2025</p>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">
-                            Hafal 30 Juz! Siswi SMP Merubah Dunia Pendidikan
-                        </h4>
-                        <p class="text-sm text-blue-100">24 Juli 2025</p>
                     </div>
                 </div>
 
                 <!-- News Card 4 -->
-                <div class="bg-gradient-to-br from-orange-400 to-red-500 text-white p-6 rounded-3xl">
-                    <div class="mb-4">
-                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
-                            🏊
+                <div class="bg-cover bg-center text-white rounded-3xl"
+                    style="background-image: url('{{ asset('assets/images/swimming.jpg') }}');">
+                    <div class="h-full w-full flex flex-col items-end p-6 bg-gradient-to-t from-orange-400 to-transparent rounded-3xl">
+                        <div class="mt-auto">
+                            <h4 class="text-lg font-bold mb-2">
+                                Juara Renang Kelas Dunia! Cendekia Muda Solusinya
+                            </h4>
+                            <p class="text-sm text-orange-100">24 Juli 2025</p>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">
-                            Juara Renang Kelas Dunia! Cendekia Muda Solusinya
-                        </h4>
-                        <p class="text-sm text-orange-100">24 Juli 2025</p>
                     </div>
                 </div>
 
                 <!-- News Card 5 -->
-                <div class="bg-gradient-to-br from-gray-600 to-gray-800 text-white p-6 rounded-3xl">
-                    <div class="mb-4">
-                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
-                            🧠
+                <div class="bg-cover bg-center text-white rounded-3xl"
+                    style="background-image: url('{{ asset('assets/images/library.jpg') }}');">
+                    <div class="h-full w-full flex flex-col items-end p-6 bg-gradient-to-t from-gray-600 to-transparent rounded-3xl">
+                        <div class="mt-auto">
+                            <h4 class="text-lg font-bold mb-2">
+                                Pengajian Bulanan YLP Merubah Mindset Guru!
+                            </h4>
+                            <p class="text-sm text-gray-300">24 Juli 2025</p>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">
-                            Pengajian Bulanan YLP Merubah Mindset Guru!
-                        </h4>
-                        <p class="text-sm text-gray-300">24 Juli 2025</p>
                     </div>
                 </div>
 
                 <!-- News Card 6 -->
-                <div class="bg-gradient-to-br from-lime-400 to-green-500 text-white p-6 rounded-3xl">
-                    <div class="mb-4">
-                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
-                            💡
+                <div class="bg-cover bg-center text-white rounded-3xl"
+                    style="background-image: url('{{ asset('assets/images/lab.jpg') }}');">
+                    <div class="h-full w-full flex flex-col items-end p-6 bg-gradient-to-t from-lime-400 to-transparent rounded-3xl">
+                        <div class="mt-auto">
+                            <h4 class="text-lg font-bold mb-2">
+                                LuminoED Tantang Google Mengenai Smartboard!
+                            </h4>
+                            <p class="text-sm text-green-100">24 Juli 2025</p>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">
-                            LuminoED Tantang Google Mengenai Smartboard!
-                        </h4>
-                        <p class="text-sm text-green-100">24 Juli 2025</p>
                     </div>
                 </div>
             </div>
